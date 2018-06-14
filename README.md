@@ -1,9 +1,10 @@
 # Chromatic-Analysis
 Chromatic Analysis of (R,G,B) images converted to (H,S,V)
 
+# Reference
 The following article describes the algorithm, the transformation from RGB to HSV and the 1D/2D/3D chromatic histograms in detail: 
 
-C.C. Reyes-Aldasoro, et. al., An automatic algorithm for the segmentation and morphological analysis of microvessels in immunostained histological tumour sections, Journal of Microscopy, Volume 242, Issue 3, pages 262 - 278, June 2011.
+C.C. Reyes-Aldasoro, et. al., <a href="https://doi.org/10.1111/j.1365-2818.2010.03464.x">An automatic algorithm for the segmentation and morphological analysis of microvessels in immunostained histological tumour sections</a>, Journal of Microscopy, Volume 242, Issue 3, pages 262 - 278, June 2011.
 
 
 
