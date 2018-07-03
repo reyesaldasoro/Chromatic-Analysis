@@ -2,7 +2,7 @@
 Chromatic Analysis of (R,G,B) images converted to (H,S,V)
 
 # Reference
-The following article describes the algorithm, the transformation from RGB to HSV and the 1D/2D/3D chromatic histograms in detail: 
+The following article describes the algorithm, the transformation from RGB to HSV and the 1D/2D/3D chromatic histograms in detail:
 
 C.C. Reyes-Aldasoro, et. al., <a href="https://doi.org/10.1111/j.1365-2818.2010.03464.x">An automatic algorithm for the segmentation and morphological analysis of microvessels in immunostained histological tumour sections</a>, Journal of Microscopy, Volume 242, Issue 3, pages 262 - 278, June 2011.
 
@@ -39,7 +39,7 @@ figure(1)
 
 imagesc(Fluores)
 
-![Screenshot](userManualChromat_01.png)
+![Screenshot](Figures/userManualChromat_01.png)
 
 Obtaining the chromatic components
 
@@ -59,7 +59,7 @@ To display the histograms in two dimensions type:
 
 ChromHistogram2D(finalResults,2);
 
-![Screenshot](userManualChromat_02.png)
+![Screenshot](Figures/userManualChromat_02.png)
 
 
 The histogram is displayed as a black mesh where the height increases with the relative occurrence of the Hue and the Saturation, the value is not included here. To aid visualising the results, a "mat" with all the hue/saturation possibilities is displayed below the histogram. The number 2 is used to plot in figure 2.
@@ -70,7 +70,7 @@ To display the histograms in three dimensions type:
 
 ChromHistogram3D(finalResults,3);
 
-![Screenshot](userManualChromat_03.png)
+![Screenshot](Figures/userManualChromat_03.png)
 
 
 
@@ -82,7 +82,7 @@ Quantification of the distribution
 The variable extraData contains the ratios of the distribution, that is, the amount of the pixels that belong to half of each dimension, and also split in quarters and eights:
 
 extraData
-extraData = 
+extraData =
 
               hueRatio: 0.9267
        saturationRatio: 0.2002
@@ -103,7 +103,7 @@ figure(4)
 imagesc(dataIn)
 
 
-![Screenshot](userManualChromat_04.png)
+![Screenshot](Figures/userManualChromat_04.png)
 
 
 [finalResults2,extraData2] = chromaticAnalysis (dataIn);
@@ -111,17 +111,17 @@ imagesc(dataIn)
 
 ChromHistogram2D(finalResults2,5);
 
-![Screenshot](userManualChromat_05.png)
+![Screenshot](Figures/userManualChromat_05.png)
 
 
 ChromHistogram3D(finalResults2,6);
 
 
-![Screenshot](userManualChromat_06.png)
+![Screenshot](Figures/userManualChromat_06.png)
 
 
 extraData2
-extraData2 = 
+extraData2 =
 
               hueRatio: 0.5725
        saturationRatio: 0.9739
@@ -132,6 +132,3 @@ extraData2 =
            hueRatio125: [0.3769 0.0108 0.0205 0.1644 0.2109 0.1894 0.0139 0.0133]
     saturationRatio125: [0.4621 0.3534 0.1162 0.0422 0.0159 0.0055 0.0030 0.0017]
          valueRatio125: [1.7806e-04 0.0036 0.0123 0.0307 0.0824 0.1290 0.2207 0.5211]
-
-
-
